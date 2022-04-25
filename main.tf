@@ -5,7 +5,7 @@ provider "aws" {
 #Create security group with firewall rules
 resource "aws_security_group" "security_jenkins_grp" {
   name        = var.security_group
-  description = "security group for jenkins"
+  description = "the security group for jenkins"
 
   ingress {
     from_port   = 8080
